@@ -478,3 +478,16 @@ right: -5em;
     z-index: -2;
     width: 100%;
 }
+.bottom{
+    padding: .3em 1em;
+    border:2em;
+    text-align: center;
+    color: #241f21;
+    background-color:#ff00ff ;
+    line-height: 1;
+    /* position: absolute;
+   top:2em;
+    left:0.5em; */
+
+
+}
