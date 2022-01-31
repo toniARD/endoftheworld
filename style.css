@@ -3,26 +3,23 @@
     font-weight: 400;
     src: url("fonts/Eskool-Regular.woff")format("woff2");
 }
-head
-{
 
-icon: img src="images/MOUSE.png";
-
-}
 
     
 body{
+    display: flex;
+    flex-wrap: wrap;
     max-width: 100vw;
     background-color: #00ff00;
-    margin: 0 auto;
+    margin:0;
     overflow-y: scroll;
-    overflow-x: hidden;
+    overflow-x: scroll;
     z-index: -3;
-    
+    padding-bottom: 0;
+   
 }
 article{
-    max-width: 100vw;
-    /* background-color: #00ff00; */
+width: 100%;
 
 }
 
@@ -32,7 +29,9 @@ article{
     --offset: 54px;
     --move-initial: calc( -25% + var(--offset));
     --move-final: calc( -50% + var(--offset));
-    padding-bottom: 10px;
+    padding-bottom: 0px;
+    z-index: 1000;
+    margin-bottom: 0;
 }
 
 .marquee-inner {
@@ -51,6 +50,7 @@ article{
     background-color:#241f21 ;
     padding: 0 20px;
     white-space: nowrap;
+    margin-bottom: 0;
 }
 @keyframes marquee {
     0% {
@@ -82,9 +82,9 @@ z-index: 1;
 }
 .starbackimgtwo{
     position:absolute;
-    top: 26em;
-    left: 2.3em;
-    max-width: 29.3em;
+    top: 27vw;
+    left: 2.3vw;
+    max-width: 33.3vw;
     z-index: 1;
     }
 .h1{
@@ -108,9 +108,7 @@ h1{
     
 
 }
-.title{
-    
-}
+
 h2{
     font-family: futura-pt, sans-serif;
     font-weight: 800;
@@ -146,8 +144,8 @@ h3{
     margin-left: 0;
     color: #00ff00;
     position: absolute;
-    top: 32em;
-    left: 4.7em; 
+    top: 36vw;
+    left: 5.2vw; 
     position:absolute;
     z-index: 2; 
 
@@ -181,7 +179,7 @@ img{
 .watchers{
     z-index: 2;
     width: 49%;
-    hight: auto;
+    height: auto;
     position: absolute;
     top:0;
     right:0;
@@ -282,9 +280,7 @@ position: absolute;
     max-width: 32.859375%;
     z-index: 1;
     mix-blend-mode:color-burn;
-    color-adjust: ;
     position: absolute;
-    
     left:20.5%;
     margin-top: 2%;
 }
@@ -371,31 +367,39 @@ position: absolute;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 110%;
-    padding-left: 0em;
+    width: 100%;
+    height: 126vh;
+    padding-left: 23em;
     padding-right: 0em;
-    padding-top:3em;
-    padding-bottom:3emx ;
+    padding-top:10em;
+    padding-bottom:.5em;
     overflow: hidden;
     position: relative;
 
 }
 
 .p3{
-    max-width: 33%;
+    max-width: 50%;
     display: inline-block;
+    position: absolute;
+    margin: 0 auto;
+    padding-top: 10em;
+    padding-right: 10vw;
 }
 .tableskelfirst{
    width:20%;
+   height: auto;
     overflow:hidden;
-    height: 40em;
-    position: relative;
+    height: 60em;
+    position: absolute;
+    left: -3vw;
     }  
 .tableskelsecond{
         width:20%;
          overflow:hidden;
-         height: 40em;
-         position: relative;
+         height: 60em;
+         position: absolute;
+         left:80vw
          
          }
          .tableskelsecond:hover {
@@ -420,7 +424,7 @@ position: absolute;
         
     }
 .midtext{
-    width: 150%;
+    width: 70%;
     margin-right:8em;
     margin-left:8em ;
     
@@ -456,7 +460,16 @@ position: absolute;
 .nundiv{
     max-width: 80%;
     z-index: -1;
-    padding: 4em;
+    padding: 0em;
+   align-content: center;
+   position: relative;
+}
+.nun{
+    width: 150%;
+}
+.nundiv:hover{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
 }
 .quote{
     font-family: futura-pt, sans-serif;
@@ -466,16 +479,17 @@ position: absolute;
     text-align: center;
     margin: 0 auto;
     line-height: 89%;
-    padding-top: .5em;
-    padding-bottom: .5em;
+    /* padding-top: 10vh;
+    padding-bottom: .5em; */
+
 
 
 }
 .darwin{
     z-index: 1;
     position: absolute;
-    bottom: 3em;
-    left: 1em;
+    bottom: 1.7em;
+    left: 2.9em;
     color: #00ff00;
 
 }
@@ -488,38 +502,44 @@ position: absolute;
 
 }
 .collage{
-    max-width: 30%;
+    max-width: 4vw;
     height: auto;
     mix-blend-mode:multiply;
     margin: 0%;
 }
 .one{
+    width:60%;
     position: absolute;
     left: 64%;
     top:2%;
     background-color:#00ff00 ;
 }
 .two{
+    width:60%;
     position: absolute;
     left: 60%;
     top:10%;
 }
 .three{
+    width:60%;
     position: absolute;
     left: 55%;
     top:21em;
 }
 .four{
+    width:60%;
     position: absolute;
     left: 20em;
     top:25em;
 }
 .five{
+    width:60%;
     position: absolute;
     left: 59%;
     top:3%;
 }
 .six{
+    width:60%;
     position: absolute;
     left:-2em;
     top:19em;
@@ -527,33 +547,66 @@ position: absolute;
 
 .nextarticle{
     display: flex;
-    max-width: 80%;
-}
-.next{
-    display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    padding-bottom:20em ;
-    padding-top: 3em;
-    width:100vw;
+    width: 100%;
+    padding-top: 10vh;
+    background-color: #ff00ff; 
+    margin-bottom: 0;
     position: relative;
-    background-color: #ff00ff;  
-    position: relative;  
 }
+h5{
+
+    font-size: 3.5vw;
+
+
+}
+.nextbutton{
+
+    background-size: contain;
+    width: 31%;
+    height: auto;
+    position: absolute;
+    color: #241f21;
+    background-repeat: no-repeat;
+    padding: 71px;
+    background-image: url("images/nextarticle.png");
+    position: absolute;
+    left:57vw;
+    top: -17vh;
+    background-size: contain;
+    z-index:10000000 ;  
+}
+.nextbutton:hover{
+
+    background-size: contain;
+    width: 31%;
+    height: auto;
+    position: absolute;
+    color: #241f21;
+    background-repeat: no-repeat;
+    padding: 71px;
+    background-image: url("images/nextarticlehover.png");
+    position: absolute;
+    left:57vw;
+    top: -17vh;
+    background-size: contain;
+    z-index:10000000 ;  
+}
+
 .nexttitle{
     font-family: futura-pt, sans-serif;
     font-weight: 800;
     font-style: normal; ;
-    font-size: 10vw;
+    font-size: 7vw;
     color: #ff00ff;
     text-align: left;
-    width: 95vw;
-    margin:0 .1EM;
+    width: 80vw;
+    margin-left: 1.5em;
     background-color:#241f21; 
-    padding-top: 1em;
+    padding-top: .5em;
     padding-left: .2em;
-    padding-bottom: .1em;
-  position: relative;
+    padding-bottom: 0em;
+    position: relative;
     
     
 
@@ -561,19 +614,43 @@ position: absolute;
 .bottom{
     position: absolute;
     background-color: #ff00ff;
-    right: 0.5em;
-    top: 19Em;
-    padding-right: 1em;
+    right: 0.5vw;
+    top: 52vh;
+    padding-right: 13vw;
     padding-left: 1em;
     color: #241f21;
     
 }
 .blackstarbottom{
     position:absolute;
-    top: 26em;
-    left: 2.3em;
-    max-width: 29.3em;
+   top:1vw;
+    left:15vw;
+    max-width: 29.3vw;
     z-index: 1;
+    width: 100%;
+ 
     
 
+}
+.blackstarimg{
+    width: 100%;
+}
+.pinkstar{
+    width: 100%;
+}
+.listcompo2{
+    padding-bottom: 20vh;
+}
+/* .nextbutton{
+    display: inline;
+    width: 25%;
+    height: auto;
+    background-color: black;
+} */
+.writerbottom{
+    color: #ff00ff;
+    position: absolute;
+    bottom:63vh;;
+    left: 25vw;
+    z-index: 10;
 }
