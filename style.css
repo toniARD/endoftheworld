@@ -185,6 +185,9 @@ img{
     right:0;
 
 }
+.watchers:hover{
+    cursor: url("images/speech-02-02-04-04.png") 2 2, pointer;
+}
 /* .greenline{
     position:absolute;
 top: -1em;
@@ -230,15 +233,19 @@ position: absolute;
 }
 
 .list:before {
-    content:"*";
+    content:url("images/starside-01.png");
     font-family: "eskool";
-    color: #241f21;
+    color: #ff00ff;
     font-size: 15vh;
     text-align: justify;
     position:absolute;
-    top: -53px;
+    top: -22px;
     left: -20px;
+    animation: mymove 10s infinite;
 }
+@keyframes mymove {
+   100% {transform: rotate(360deg);}
+  }
 
 .p1{
     max-width: 65%;
@@ -265,7 +272,7 @@ position: absolute;
     display: flex;
     flex-wrap: wrap;
     margin-top: 3.90625%;
-    margin-bottom: 3.90625%;
+    margin-bottom: 4.90625%;
     padding: 1.5%;
 
 }
@@ -275,6 +282,9 @@ position: absolute;
     margin-left: 11%;
     z-index: -1;
     position: relative;
+}
+.greenlinewoman:hover{
+    cursor: url("images/speech-02-02-04-04.png") 2 2, pointer;
 }
 .greenlinewoman{
     max-width: 32.859375%;
@@ -296,6 +306,8 @@ position: absolute;
 
 .p2{
     padding-left: 18em;
+    padding-bottom: 5%;
+    padding-top: 5%;
     max-width: 40%;
 }
 
@@ -304,9 +316,9 @@ position: absolute;
     flex-wrap: wrap; 
     width:100%;
     margin: 0 auto;
-    column-gap: 5%;
-    padding: 0.2%;
-    border-width: .2%;    
+    column-gap: 0%;
+    padding: 5%;
+    /* border-width: .2%;     */
 }
 .listcompo1{
     max-width: 25%;
@@ -371,7 +383,7 @@ position: absolute;
     height: 126vh;
     padding-left: 23em;
     padding-right: 0em;
-    padding-top:10em;
+    padding-top:20em;
     padding-bottom:.5em;
     overflow: hidden;
     position: relative;
@@ -404,15 +416,19 @@ position: absolute;
          }
          .tableskelsecond:hover {
             transform: scaleX(-1);
+            cursor: url("images/speech-02-02-04-04.png") 2 2, pointer;
+           
           }
 .tableskel{
         width:59em;
         height: auto;
         position: absolute;
         right:2.3em;
+        animation: cubic-bezier(0.075, 0.82, 0.165, 1);
     }
    .tableskelfirst:hover {
         transform: scaleX(-1);
+        cursor: url("images/speech-02-02-04-04.png") 2 2, pointer;
       }
     .tableman{
         width:59em;
@@ -436,7 +452,7 @@ position: absolute;
     text-align: left;
     padding-left: 2.06515625%;
     text-align: center;
-    margin-top: 3.9em;;
+    margin-top: .0002vh;;
     padding-right: 2.06515625%;
     padding-top: 3%;
     padding-bottom: 9.5%;
@@ -455,7 +471,8 @@ position: absolute;
     flex-wrap: wrap;
     width: 100%;
     position: relative;
-    margin: 5%;
+    margin-top:0;
+    margin-left: 5%
 }
 .nundiv{
     max-width: 80%;
@@ -498,7 +515,9 @@ position: absolute;
     flex-wrap: wrap;
     width: 100%;
     position: relative;
-    margin: 10%;
+    margin-bottom: 20%;
+    margin-top: 5%;
+    margin-left: 2%;
 
 }
 .collage{
@@ -507,42 +526,45 @@ position: absolute;
     mix-blend-mode:multiply;
     margin: 0%;
 }
+.collage:hover{
+    cursor: url("images/speech-02-02-04-04.png") 2 2, pointer;
+}
 .one{
     width:60%;
     position: absolute;
     left: 64%;
-    top:2%;
+    top:6%;
     background-color:#00ff00 ;
 }
 .two{
     width:60%;
     position: absolute;
-    left: 60%;
-    top:10%;
+    left: 43vw;
+    top:28%;
 }
 .three{
-    width:60%;
+    width:75%;
     position: absolute;
-    left: 55%;
+    left: 34em;
     top:21em;
 }
 .four{
-    width:60%;
+    width:98%;
     position: absolute;
-    left: 20em;
+    left: -33em;
     top:25em;
 }
 .five{
-    width:60%;
+    width:75%;
     position: absolute;
-    left: 59%;
+    left: 105%;
     top:3%;
 }
 .six{
-    width:60%;
+    width:97%;
     position: absolute;
-    left:-2em;
-    top:19em;
+    left:-5em;
+    top:28em;
 }
 
 .nextarticle{
@@ -568,11 +590,11 @@ h5{
     position: absolute;
     color: #241f21;
     background-repeat: no-repeat;
-    padding: 71px;
+    padding: 99px;
     background-image: url("images/nextarticle.png");
     position: absolute;
     left:57vw;
-    top: -17vh;
+    bottom: 77vh;
     background-size: contain;
     z-index:10000000 ;  
 }
@@ -584,11 +606,11 @@ h5{
     position: absolute;
     color: #241f21;
     background-repeat: no-repeat;
-    padding: 71px;
+    padding: 99px;
     background-image: url("images/nextarticlehover.png");
     position: absolute;
     left:57vw;
-    top: -17vh;
+    bottom: 77vh;
     background-size: contain;
     z-index:10000000 ;  
 }
