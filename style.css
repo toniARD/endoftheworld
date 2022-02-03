@@ -13,10 +13,18 @@ body{
     background-color: #00ff00;
     margin:0;
     overflow-y: scroll;
-    overflow-x: scroll;
+    overflow-x: hidden;
     z-index: -3;
     padding-bottom: 0;
    
+}
+.minimize{
+    float: top;
+    width: 100%;
+    height: 500vw;
+    background-image: url("images/boom.gif");
+    background-repeat: repeat;
+    z-index:-2;
 }
 article{
 width: 100%;
@@ -226,10 +234,11 @@ position: absolute;
     padding-top: 1.2em;
     padding-bottom: 1.2em;
     border:.2em;
-    border-style: dashed;
-    border-color:#241f21 ;
+    border-style: solid;
+    background-color:#241f21 ;
     text-align: center;
     position: relative;
+    color: #00ff00;
 }
 
 .list:before {
@@ -345,6 +354,8 @@ position: absolute;
     position: relative;
 }
 .cutimage{
+    display: flex;
+    position: relative;
    mix-blend-mode:multiply;
    height: 60%;
    width: 100%;
@@ -352,6 +363,18 @@ position: absolute;
    /* text-align: ; */
    
 
+}
+.manseaone{
+    width: 300%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.manseatwo{
+    width: 300%;
+    position: absolute;
+    right: -10vw;
+    top: 0;
 }
 .icon{
     height: auto;
@@ -460,10 +483,22 @@ position: absolute;
     display:block;
 }
 .baby{
-    padding-right: 2.06515625%;
-    padding-bottom: 9.5%;
-    width: 100%;
+    /*padding-right: 2.06515625%;*/
+    /*padding-bottom: 9.5%;*/
+    width: 200%;
+    height: auto;
     display:block;
+    mix-blend-mode:multiply;
+
+
+}
+.boom{
+    display: flex;
+    background-image: url("images/boom.gif");
+    background-repeat: repeat;
+    height: 20vw;
+    overflow: hidden;
+    padding: 0;
 
 }
 .con6{
@@ -481,8 +516,13 @@ position: absolute;
    align-content: center;
    position: relative;
 }
+
 .nun{
     width: 150%;
+}
+.nun:hover{
+    filter: blur(3px);
+
 }
 .nundiv:hover{
     -webkit-filter: blur(2px);
